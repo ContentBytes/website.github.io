@@ -1,7 +1,13 @@
 :root {
   --bg-white: #FDFDFB;
+  --bg-beige: #F0F1E7;
+
   --main-green: #009100;
   --main-yellow: #FFE300;
+
+  --secondary-green: #004D21;
+
+  --text-highlight: #F5E55C;
 
   --font-main: "Space Grotesk", sans-serif;
   --font-white: #FFFFFF;

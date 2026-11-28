@@ -1,0 +1,62 @@
+---
+import Section from "../common/Section.astro";
+import SectionHeading from "../common/SectionHeading.astro";
+
+import Image from "astro/components/Image.astro";
+
+import photo1 from "../../assets/images/community/cakeconf-coffee-break.png";
+import photo2 from "../../assets/images/community/cake-conf-audience.png";
+import photo3 from "../../assets/images/community/cake-conf.png";
+import photo4 from "../../assets/images/community/cake-conf-participants.png";
+import photo5 from "../../assets/images/community/cake-conf-afterparty.png";
+import photo6 from "../../assets/images/community/cake-conf-presentation.png";
+
+const pictures = [
+  { src: photo1, alt: "CAKE conf participants chatting during the coffee break" },
+  { src: photo2, alt: "CAKE conf participants listening to a presentation" },
+  { src: photo3, alt: "CAKE conf participants taking a picture" },
+  { src: photo4, alt: "CAKE conf participants taking a picture" },
+  { src: photo5, alt: "CAKE conf participant at the afterparty" },
+  { src: photo6, alt: "CAKE conf speaker presenting" },
+]
+---
+
+<div class="background">
+  <Section>
+    <SectionHeading number="04" title="What it looks like" />
+    <h3>
+      Community
+      <br />
+      <span class="underline">in real life</span>
+    </h3>
+    <div class="pictures">
+      {pictures.map((picture) => (
+        <Image src={picture.src} alt={picture.alt} />
+      ))}
+    </div>
+  </Section>
+</div>
+
+<style>
+  .background {
+    background-color: var(--bg-beige);
+    padding: 50px 0;
+  }
+
+  h3 {
+    font-size: 64px;
+  }
+
+  .underline {
+    text-decoration: underline 0.4em var(--text-highlight);
+    text-underline-offset: -0.23em;
+    text-decoration-skip-ink: none;
+  }
+
+  .pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 42px;
+  }
+</style>

@@ -1,0 +1,29 @@
+---
+interface Props {
+  number: string;
+  title: string;
+  color?: "green" | "white";
+}
+
+const { number, title, color = "green" } = Astro.props;
+---
+
+<h2 class:list={["section-heading", color]}>
+  {number} / {title}
+</h2>
+
+<style>
+  .section-heading {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .green {
+    color: var(--secondary-green);
+  }
+
+  .white {
+    color: var(--font-white);
+  }
+</style>
