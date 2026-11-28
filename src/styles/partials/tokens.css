@@ -6,5 +6,9 @@
   --font-main: "Space Grotesk", sans-serif;
   --font-white: #FFFFFF;
   --font-black: #000000;
+
+  --maxw: 1100px;
+  --space-4: 24px;
+  --space-5: 32px;
 }
 

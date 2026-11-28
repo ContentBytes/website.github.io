@@ -1,0 +1,49 @@
+---
+import Section from "./common/Section.astro";
+import SquareList from "./common/SquareList.astro";
+---
+
+<Section>
+  <div class="hero">
+    <SquareList items={["Explore", "Conferences", "Networking"]} />
+    <h1>
+      Explore. Share. Learn. <span class="highlight">*</span>
+    </h1>
+    <div class="hero_content">
+      <p>
+        <span class="highlight">Explore</span> all things content: from AI to UX
+        writing, from documentation to storytelling, from accessibility to
+        managing content teams.
+      </p>
+      <p>
+        <span class="highlight">Share</span> experiences with content
+        enthusiasts from different backgrounds, exchange ideas.
+      </p>
+      <p>
+        And get together to <span class="highlight">learn</span> from each
+        other.
+      </p>
+    </div>
+  </div>
+</Section>
+
+<style>
+  .hero {
+    text-align: center;
+    padding-top: 100px; 
+  }
+
+  h1 {
+    font-size: 84px;
+  }
+
+  .hero_content {
+    color: #535a51;
+    line-height: 1.6;
+  }
+
+  .highlight {
+    color: var(--main-green);
+    font-weight: 700;
+  }
+</style>
