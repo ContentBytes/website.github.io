@@ -1,0 +1,25 @@
+---
+import '../styles/global.css';
+
+const firstLine = "A little curiosity goes a long way";
+const secondLine = "Have a byte";
+---
+
+<div class="info-bar">
+  <p>{firstLine} <span class="asterisk">*</span> {secondLine}</p>
+</div>
+
+<style>
+  .info-bar {
+    background-color: var(--main-green);
+    color: var(--font-white);
+    text-transform: uppercase;
+    padding: 1px;
+    text-align: center;
+  }
+
+  .asterisk {
+    color: var(--main-yellow);
+    padding: 0 10px;
+  }
+</style>
